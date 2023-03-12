@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/2022/07/23/docker-access-host/</loc>
+    <loc>https://8loser.github.io/2023/01/04/gcp-init/</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/2023/01/04/gcp-init/</loc>
+    <loc>https://8loser.github.io/2022/07/23/docker-access-host/</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/2022/05/27/Multiple-app-config/</loc>
+    <loc>https://8loser.github.io/2022/05/13/Remote-Containers/</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/2022/05/13/Remote-Containers/</loc>
+    <loc>https://8loser.github.io/2022/05/27/Multiple-app-config/</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -192,6 +192,34 @@
   </url>
   
   <url>
+    <loc>https://8loser.github.io/tags/VSCode/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://8loser.github.io/tags/Remote-Containers/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://8loser.github.io/tags/GCP/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://8loser.github.io/tags/Docker/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://8loser.github.io/tags/C/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -207,34 +235,6 @@
   
   <url>
     <loc>https://8loser.github.io/tags/Visual-Studio/</loc>
-    <lastmod>2023-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/VSCode/</loc>
-    <lastmod>2023-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/Remote-Containers/</loc>
-    <lastmod>2023-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/Docker/</loc>
-    <lastmod>2023-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/GCP/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -297,13 +297,6 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/tags/Story/</loc>
-    <lastmod>2023-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://8loser.github.io/tags/Redis/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -319,6 +312,13 @@
   
   <url>
     <loc>https://8loser.github.io/tags/Kubernetes/</loc>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://8loser.github.io/tags/Story/</loc>
     <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
