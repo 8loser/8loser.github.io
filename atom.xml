@@ -8,7 +8,47 @@
     <author>
       <name>八樓的人</name>
     </author>
-    <updated>2023-03-11T13:23:40.000Z</updated>
+    <updated>2023-03-12T13:59:19.000Z</updated>
+    <entry>
+        <id>https://8loser.github.io/2023/03/12/reduce-frontend-docker-image/</id>
+        <title>縮減靜態網頁 Docker image 大小</title>
+        <link rel="alternate" href="https://8loser.github.io/2023/03/12/reduce-frontend-docker-image/"/>
+        <content type="html">&lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;p&gt;Vue 搭配 Docker 部屬，通常 Vue 部屬都是先打包成靜態網頁再部屬到 web 服務器上，但如此無法做到程式碼上傳版控後自動部屬，因為上傳的是原始碼，不是打包後的靜態網頁。&lt;/p&gt;
+&lt;p&gt;所以有種作法是把原始碼直接直接 build 成執行  &lt;code&gt;npm run dev&lt;/code&gt;  的 docker image 後放在 server 執行。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;jsut-do-it.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;note danger&#34;&gt;
+&lt;p&gt;這種作法產生的 docker image 很大，枉費還用 Vue&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;縮減方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#縮減方式&#34;&gt;#&lt;/a&gt; 縮減方式&lt;/h1&gt;
+&lt;p&gt;使用 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vYnVpbGQvYnVpbGRpbmcvbXVsdGktc3RhZ2Uv&#34;&gt;Multi-stage builds&lt;/span&gt;，在第一個 stage build 出靜態網頁，複製到第二個 stage 跟 web service 打包成 image。&lt;/p&gt;
+&lt;p&gt;假設原本 Dockerfiler 如下&lt;/p&gt;
+&lt;figure class=&#34;highlight dockerfile&#34;&gt;&lt;figcaption data-lang=&#34;Docker&#34;&gt;&lt;span&gt;fat Dockerfile&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; node:18-slim&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;COPY&lt;/span&gt; . .&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;RUN&lt;/span&gt; npm install --production=false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;EXPOSE&lt;/span&gt; 5173&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;CMD&lt;/span&gt; [&lt;span class=&#34;token string&#34;&gt;&#34;npm&#34;&lt;/span&gt;,&lt;span class=&#34;token string&#34;&gt;&#34;run&#34;&lt;/span&gt;,&lt;span class=&#34;token string&#34;&gt;&#34;dev&#34;&lt;/span&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;加上第二個 stage，並且使用 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hY21lLmNvbS9zb2Z0d2FyZS90aHR0cGQv&#34;&gt;thttpd&lt;/span&gt; 作為靜態網頁的 web service&lt;/p&gt;
+&lt;figure class=&#34;highlight dockerfile&#34;&gt;&lt;figcaption data-lang=&#34;Docker&#34;&gt;&lt;span&gt;slim Dockerfile&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 第一個 stage&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; node:18-slim &lt;span class=&#34;token keyword&#34;&gt;AS&lt;/span&gt; builder&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;COPY&lt;/span&gt; . .&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;RUN&lt;/span&gt; npm install --production=false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# build static html 檔案，檔案會產生在 /dist 內&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;RUN&lt;/span&gt; npm run build&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 第二個 stage&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; alpine&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 安裝 thttpd&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;RUN&lt;/span&gt; apk update &amp;amp;&amp;amp; apk upgrade &amp;amp;&amp;amp; apk add --no-cache thttpd&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 複製第一個 stage 產生的 static html 到 /front&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;COPY&lt;/span&gt; &lt;span class=&#34;token options&#34;&gt;&lt;span class=&#34;token property&#34;&gt;--from&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;builder&lt;/span&gt;&lt;/span&gt; /dist /front&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;EXPOSE&lt;/span&gt; 5173&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# container 啟動時執行 thttpd&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token instruction&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;CMD&lt;/span&gt; [&lt;span class=&#34;token string&#34;&gt;&#34;thttpd&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;-D&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;-h&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;0.0.0.0&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;-p&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;5173&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;-d&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;/front&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;-l&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;-&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;-M&#34;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#34;60&#34;&lt;/span&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;finish.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;比較&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#比較&#34;&gt;#&lt;/a&gt; 比較&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Docker image 大小&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;修改前&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;504MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;修改後&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;11.1MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img data-src=&#34;whoa.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="Docker" scheme="https://8loser.github.io/tags/Docker/" />
+        <updated>2023-03-12T13:59:19.000Z</updated>
+    </entry>
     <entry>
         <id>https://8loser.github.io/2023/03/11/EndeavourOS-init/</id>
         <title>EndeavourOS 常用程式安裝</title>
