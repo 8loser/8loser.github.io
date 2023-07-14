@@ -7,6 +7,16 @@
     "home_page_url": "https://8loser.github.io",
     "items": [
         {
+            "id": "https://8loser.github.io/2023/07/14/fixing-mixed-content/",
+            "url": "https://8loser.github.io/2023/07/14/fixing-mixed-content/",
+            "title": "瀏覽器出現 Mixed Content 訊息",
+            "date_published": "2023-07-14T11:25:05.000Z",
+            "content_html": "<p>Chrome Console 出現  <code>Mixed Content</code>  訊息</p>\n<pre><code>Mixed Content: The page at 'https://www.***.com/' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://192.168.10.200:3000/'. \nThis request has been blocked; the content must be served over HTTPS.\n</code></pre>\n<p>出現該訊息是因為在 https 頁面內，呼叫 http 協定的 API，基於安全問題，瀏覽器會封鎖該請求。解決方式是把 API 換成 https 即可，但這個 API 是我們放在客戶端存取客戶內部網路的 service，讓客戶在我們網站透過呼叫該 service 存取他們內網資料。</p>\n<p>如果要為了這個 service 建立域名、申請 SSL 憑證有點麻煩（我就懶），所以請客戶調整瀏覽器設定，允許不安全內容。</p>\n<p><img data-src=\"allow-insecure-content.png\" alt=\"Allow insecure conten\" /></p>\n<h1 id=\"相關參考\"><a class=\"anchor\" href=\"#相關參考\">#</a> 相關參考</h1>\n<ul>\n<li>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9zdXBwb3J0Lmdvb2dsZS5jb20vY2hyb21lL2Fuc3dlci8xMTQ2NjI/aGw9emgtSGFudCZhbXA7Y289R0VOSUUuUGxhdGZvcm0lM0REZXNrdG9wI3ppcHB5PSUyQyVFNyU5RSVBRCVFOCVBNyVBMyVFNSU4RiVBRiVFOCVBRSU4QSVFNiU5QiVCNCVFNyU5QSU4NCVFNiVBQyU4QSVFOSU5OSU5MA==\">變更網站設定權限</span></p>\n</li>\n<li>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtVFcvZG9jcy9XZWIvU2VjdXJpdHkvTWl4ZWRfY29udGVudA==\">混合內容</span></p>\n</li>\n</ul>\n",
+            "tags": [
+                "troubleshooting"
+            ]
+        },
+        {
             "id": "https://8loser.github.io/2023/05/28/yay-is-corrupted/",
             "url": "https://8loser.github.io/2023/05/28/yay-is-corrupted/",
             "title": "yay 更新顯示檔案毀損",

@@ -10,8 +10,32 @@
         </author>
         <description></description>
         <language>zh-TW</language>
-        <pubDate>Sun, 28 May 2023 18:03:54 +0800</pubDate>
-        <lastBuildDate>Sun, 28 May 2023 18:03:54 +0800</lastBuildDate>
+        <pubDate>Fri, 14 Jul 2023 19:25:05 +0800</pubDate>
+        <lastBuildDate>Fri, 14 Jul 2023 19:25:05 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://8loser.github.io/2023/07/14/fixing-mixed-content/</guid>
+            <title>瀏覽器出現 Mixed Content 訊息</title>
+            <link>https://8loser.github.io/2023/07/14/fixing-mixed-content/</link>
+            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
+            <pubDate>Fri, 14 Jul 2023 19:25:05 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Chrome Console 出現  &lt;code&gt;Mixed Content&lt;/code&gt;  訊息&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Mixed Content: The page at &#39;https://www.***.com/&#39; was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint &#39;http://192.168.10.200:3000/&#39;. 
+This request has been blocked; the content must be served over HTTPS.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;出現該訊息是因為在 https 頁面內，呼叫 http 協定的 API，基於安全問題，瀏覽器會封鎖該請求。解決方式是把 API 換成 https 即可，但這個 API 是我們放在客戶端存取客戶內部網路的 service，讓客戶在我們網站透過呼叫該 service 存取他們內網資料。&lt;/p&gt;
+&lt;p&gt;如果要為了這個 service 建立域名、申請 SSL 憑證有點麻煩（我就懶），所以請客戶調整瀏覽器設定，允許不安全內容。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;allow-insecure-content.png&#34; alt=&#34;Allow insecure conten&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;相關參考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#相關參考&#34;&gt;#&lt;/a&gt; 相關參考&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdXBwb3J0Lmdvb2dsZS5jb20vY2hyb21lL2Fuc3dlci8xMTQ2NjI/aGw9emgtSGFudCZhbXA7Y289R0VOSUUuUGxhdGZvcm0lM0REZXNrdG9wI3ppcHB5PSUyQyVFNyU5RSVBRCVFOCVBNyVBMyVFNSU4RiVBRiVFOCVBRSU4QSVFNiU5QiVCNCVFNyU5QSU4NCVFNiVBQyU4QSVFOSU5OSU5MA==&#34;&gt;變更網站設定權限&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtVFcvZG9jcy9XZWIvU2VjdXJpdHkvTWl4ZWRfY29udGVudA==&#34;&gt;混合內容&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://8loser.github.io/2023/05/28/yay-is-corrupted/</guid>
             <title>yay 更新顯示檔案毀損</title>
