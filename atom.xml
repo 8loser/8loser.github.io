@@ -11,10 +11,10 @@
     <updated>2023-08-26T16:40:55.000Z</updated>
     <entry>
         <id>https://8loser.github.io/2023/08/27/static-web-page-refresh-404/</id>
-        <title>靜態網頁更新出現 404</title>
+        <title>靜態網頁 refresh 出現 404</title>
         <link rel="alternate" href="https://8loser.github.io/2023/08/27/static-web-page-refresh-404/"/>
         <content type="html">&lt;h1 id=&#34;trouble&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#trouble&#34;&gt;#&lt;/a&gt; Trouble&lt;/h1&gt;
-&lt;p&gt;Vue 開發網頁打包成靜態網頁檔案，使用 docker compose 結合 nginx 佈署，網頁切換到有路徑的頁面後按 F5 更新頁面會出現 404 錯誤 。&lt;/p&gt;
+&lt;p&gt;Vue 開發網頁打包成靜態網頁檔案，使用 docker compose 結合 nginx 佈署，網頁切換到有路徑的頁面後按 F5 重新整理頁面會出現 404 錯誤 。&lt;/p&gt;
 &lt;p&gt;靜態頁面打包後有再用 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hY21lLmNvbS9zb2Z0d2FyZS90aHR0cGQv&#34;&gt;thttpd&lt;/span&gt; 作為 web 服務並打包成 container 方便佈署，實際錯誤情況如下圖，如果不同的 web 服務會有不同畫面。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;404-not-found.png&#34; alt=&#34;404 Not Found&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;docker-composeyml&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-composeyml&#34;&gt;#&lt;/a&gt; Docker-compose.yml&lt;/h1&gt;
