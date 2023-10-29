@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://8loser.github.io/about/index.html</loc>
+    
+    <lastmod>2023-10-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://8loser.github.io/2023/10/30/spawn-node-gyp-ENOENT/</loc>
     
     <lastmod>2023-10-29</lastmod>
@@ -101,15 +110,6 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/about/index.html</loc>
-    
-    <lastmod>2023-09-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://8loser.github.io/2023/03/12/reduce-frontend-docker-image/</loc>
     
     <lastmod>2023-03-12</lastmod>
@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/2023/01/04/gcp-init/</loc>
+    <loc>https://8loser.github.io/2022/05/14/hexo-start/</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/2022/05/14/hexo-start/</loc>
+    <loc>https://8loser.github.io/2023/01/04/gcp-init/</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -218,6 +218,13 @@
 
   
   <url>
+    <loc>https://8loser.github.io/tags/scaffolding/</loc>
+    <lastmod>2023-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://8loser.github.io/tags/EndeavourOS/</loc>
     <lastmod>2023-10-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -239,7 +246,28 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/tags/scaffolding/</loc>
+    <loc>https://8loser.github.io/tags/VSCode/</loc>
+    <lastmod>2023-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://8loser.github.io/tags/Remote-Container/</loc>
+    <lastmod>2023-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://8loser.github.io/tags/Mixed-Content/</loc>
+    <lastmod>2023-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://8loser.github.io/tags/Browser/</loc>
     <lastmod>2023-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -267,7 +295,7 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/tags/DBeaver/</loc>
+    <loc>https://8loser.github.io/tags/Hexo/</loc>
     <lastmod>2023-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -281,42 +309,7 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/tags/VSCode/</loc>
-    <lastmod>2023-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/Remote-Container/</loc>
-    <lastmod>2023-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/Hexo/</loc>
-    <lastmod>2023-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/Docker/</loc>
-    <lastmod>2023-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/Mixed-Content/</loc>
-    <lastmod>2023-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/Browser/</loc>
+    <loc>https://8loser.github.io/tags/DBeaver/</loc>
     <lastmod>2023-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -337,6 +330,13 @@
   </url>
   
   <url>
+    <loc>https://8loser.github.io/tags/Docker/</loc>
+    <lastmod>2023-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://8loser.github.io/tags/Story/</loc>
     <lastmod>2023-10-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -351,6 +351,13 @@
   </url>
   
   <url>
+    <loc>https://8loser.github.io/tags/Node/</loc>
+    <lastmod>2023-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://8loser.github.io/tags/Nginx/</loc>
     <lastmod>2023-10-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -359,27 +366,6 @@
   
   <url>
     <loc>https://8loser.github.io/tags/WebSocket/</loc>
-    <lastmod>2023-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/Node/</loc>
-    <lastmod>2023-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/static-web-page/</loc>
-    <lastmod>2023-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/tags/Docker-Compose/</loc>
     <lastmod>2023-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -401,6 +387,20 @@
   
   <url>
     <loc>https://8loser.github.io/tags/Kubernetes/</loc>
+    <lastmod>2023-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://8loser.github.io/tags/static-web-page/</loc>
+    <lastmod>2023-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://8loser.github.io/tags/Docker-Compose/</loc>
     <lastmod>2023-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
