@@ -16,8 +16,11 @@
             <guid isPermalink="true">https://8loser.github.io/2023/10/30/spawn-node-gyp-ENOENT/</guid>
             <title>spawn node-gyp ENOENT</title>
             <link>https://8loser.github.io/2023/10/30/spawn-node-gyp-ENOENT/</link>
+            <category term="Trouble" scheme="https://8loser.github.io/categories/Trouble/" />
+            <category term="Hexo" scheme="https://8loser.github.io/tags/Hexo/" />
             <category term="Docker" scheme="https://8loser.github.io/tags/Docker/" />
-            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
+            <category term="Shoka" scheme="https://8loser.github.io/tags/Shoka/" />
+            <category term="Node" scheme="https://8loser.github.io/tags/Node/" />
             <pubDate>Mon, 30 Oct 2023 01:04:26 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;問題描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#問題描述&#34;&gt;#&lt;/a&gt; 問題描述&lt;/h1&gt;
 &lt;p&gt;要把 theme 轉為 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmthaXRha3UueHl6Lw==&#34;&gt;shokaX&lt;/span&gt; 時，執行  &lt;code&gt;SXC install shokaX&lt;/code&gt;  出現錯誤訊息&lt;/p&gt;
@@ -34,10 +37,10 @@
             <guid isPermalink="true">https://8loser.github.io/2023/08/27/static-web-page-refresh-404/</guid>
             <title>靜態網頁 refresh 出現 404</title>
             <link>https://8loser.github.io/2023/08/27/static-web-page-refresh-404/</link>
-            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
-            <category term="nginx" scheme="https://8loser.github.io/tags/nginx/" />
+            <category term="Trouble" scheme="https://8loser.github.io/categories/Trouble/" />
+            <category term="Nginx" scheme="https://8loser.github.io/tags/Nginx/" />
             <category term="static web page" scheme="https://8loser.github.io/tags/static-web-page/" />
-            <category term="docker compose" scheme="https://8loser.github.io/tags/docker-compose/" />
+            <category term="Docker Compose" scheme="https://8loser.github.io/tags/Docker-Compose/" />
             <pubDate>Sun, 27 Aug 2023 00:40:55 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;trouble&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#trouble&#34;&gt;#&lt;/a&gt; Trouble&lt;/h1&gt;
 &lt;p&gt;Vue 開發網頁打包成靜態網頁檔案，使用 docker compose 結合 nginx 佈署，網頁切換到有路徑的頁面後按 F5 重新整理頁面會出現 404 錯誤 。&lt;/p&gt;
@@ -57,7 +60,9 @@ error_page 404 /index.html;
             <guid isPermalink="true">https://8loser.github.io/2023/07/14/fixing-mixed-content/</guid>
             <title>瀏覽器出現 Mixed Content 訊息</title>
             <link>https://8loser.github.io/2023/07/14/fixing-mixed-content/</link>
-            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
+            <category term="Trouble" scheme="https://8loser.github.io/categories/Trouble/" />
+            <category term="Mixed Content" scheme="https://8loser.github.io/tags/Mixed-Content/" />
+            <category term="Browser" scheme="https://8loser.github.io/tags/Browser/" />
             <pubDate>Fri, 14 Jul 2023 19:25:05 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Chrome Console 出現  &lt;code&gt;Mixed Content&lt;/code&gt;  訊息&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Mixed Content: The page at &#39;https://www.***.com/&#39; was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint &#39;http://192.168.10.200:3000/&#39;. 
@@ -81,9 +86,9 @@ This request has been blocked; the content must be served over HTTPS.
             <guid isPermalink="true">https://8loser.github.io/2023/05/28/yay-is-corrupted/</guid>
             <title>yay 更新顯示檔案毀損</title>
             <link>https://8loser.github.io/2023/05/28/yay-is-corrupted/</link>
+            <category term="Trouble" scheme="https://8loser.github.io/categories/Trouble/" />
             <category term="EndeavourOS" scheme="https://8loser.github.io/tags/EndeavourOS/" />
             <category term="Linux" scheme="https://8loser.github.io/tags/Linux/" />
-            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
             <pubDate>Sun, 28 May 2023 18:03:54 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;問題描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#問題描述&#34;&gt;#&lt;/a&gt; 問題描述&lt;/h1&gt;
 &lt;p&gt;EndeavourOS 更新時出現錯誤訊息，且每次更新時都出現。&lt;/p&gt;
@@ -95,8 +100,8 @@ This request has been blocked; the content must be served over HTTPS.
             <guid isPermalink="true">https://8loser.github.io/2023/05/06/dbeaver-backup-start-unavailable/</guid>
             <title>DBeaver backup start 按鈕沒有作用</title>
             <link>https://8loser.github.io/2023/05/06/dbeaver-backup-start-unavailable/</link>
+            <category term="Trouble" scheme="https://8loser.github.io/categories/Trouble/" />
             <category term="Linux" scheme="https://8loser.github.io/tags/Linux/" />
-            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
             <category term="DBeaver" scheme="https://8loser.github.io/tags/DBeaver/" />
             <pubDate>Sat, 06 May 2023 22:57:59 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;問題描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#問題描述&#34;&gt;#&lt;/a&gt; 問題描述&lt;/h1&gt;
@@ -207,8 +212,8 @@ This request has been blocked; the content must be served over HTTPS.
             <guid isPermalink="true">https://8loser.github.io/2023/02/23/linux-recovering-journal/</guid>
             <title>Linux 開機顯示 recovering journal</title>
             <link>https://8loser.github.io/2023/02/23/linux-recovering-journal/</link>
+            <category term="Trouble" scheme="https://8loser.github.io/categories/Trouble/" />
             <category term="Linux" scheme="https://8loser.github.io/tags/Linux/" />
-            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
             <pubDate>Thu, 23 Feb 2023 16:51:28 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#描述&#34;&gt;#&lt;/a&gt; 描述&lt;/h1&gt;
 &lt;p&gt;Linux 作業系統開機顯示 recovering journal，無法正常進入桌面環境。&lt;br /&gt;
@@ -224,8 +229,8 @@ This request has been blocked; the content must be served over HTTPS.
             <guid isPermalink="true">https://8loser.github.io/2023/02/20/terminals-pty-host-is-unresponsive/</guid>
             <title>Dev Containers 出現 terminal&#39;s pty host process is unresponsive</title>
             <link>https://8loser.github.io/2023/02/20/terminals-pty-host-is-unresponsive/</link>
+            <category term="Trouble" scheme="https://8loser.github.io/categories/Trouble/" />
             <category term="VSCode" scheme="https://8loser.github.io/tags/VSCode/" />
-            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
             <category term="Remote Development" scheme="https://8loser.github.io/tags/Remote-Development/" />
             <pubDate>Mon, 20 Feb 2023 14:10:40 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;錯誤訊息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#錯誤訊息&#34;&gt;#&lt;/a&gt; 錯誤訊息&lt;/h1&gt;
@@ -570,11 +575,11 @@ connected&lt;br /&gt;
         </item>
         <item>
             <guid isPermalink="true">https://8loser.github.io/2022/10/21/nginx-websocket/</guid>
-            <title>nginx websocket 無法連接</title>
+            <title>Nginx websocket 無法連接</title>
             <link>https://8loser.github.io/2022/10/21/nginx-websocket/</link>
-            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
-            <category term="nginx" scheme="https://8loser.github.io/tags/nginx/" />
-            <category term="websocket" scheme="https://8loser.github.io/tags/websocket/" />
+            <category term="Trouble" scheme="https://8loser.github.io/categories/Trouble/" />
+            <category term="Nginx" scheme="https://8loser.github.io/tags/Nginx/" />
+            <category term="WebSocket" scheme="https://8loser.github.io/tags/WebSocket/" />
             <pubDate>Fri, 21 Oct 2022 17:10:38 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;環境&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#環境&#34;&gt;#&lt;/a&gt; 環境&lt;/h1&gt;
 &lt;p&gt;在 docker compose 中，使用 nginx 導向 websocket 到 container 內&lt;/p&gt;
@@ -622,8 +627,8 @@ connected&lt;br /&gt;
             <title>VSCode devcontainer 使用 git</title>
             <link>https://8loser.github.io/2022/06/26/git_of_devcontainer/</link>
             <category term="VSCode" scheme="https://8loser.github.io/tags/VSCode/" />
-            <category term="remote container" scheme="https://8loser.github.io/tags/remote-container/" />
-            <category term="git" scheme="https://8loser.github.io/tags/git/" />
+            <category term="Remote Container" scheme="https://8loser.github.io/tags/Remote-Container/" />
+            <category term="Git" scheme="https://8loser.github.io/tags/Git/" />
             <pubDate>Sun, 26 Jun 2022 00:41:02 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;remote-container-使用-git&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#remote-container-使用-git&#34;&gt;#&lt;/a&gt; Remote container 使用 git&lt;/h1&gt;
 &lt;p&gt;在 Visual Studio Code (下面使用 VSCode 稱呼) 內使用 devcontainer 開發時，怎麼使用 git?&lt;/p&gt;
