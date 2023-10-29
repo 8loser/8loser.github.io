@@ -8,7 +8,25 @@
     <author>
       <name>八樓的人</name>
     </author>
-    <updated>2023-08-26T16:40:55.000Z</updated>
+    <updated>2023-10-29T17:04:26.000Z</updated>
+    <entry>
+        <id>https://8loser.github.io/2023/10/30/spawn-node-gyp-ENOENT/</id>
+        <title>spawn node-gyp ENOENT</title>
+        <link rel="alternate" href="https://8loser.github.io/2023/10/30/spawn-node-gyp-ENOENT/"/>
+        <content type="html">&lt;h1 id=&#34;問題描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#問題描述&#34;&gt;#&lt;/a&gt; 問題描述&lt;/h1&gt;
+&lt;p&gt;要把 theme 轉為 shokaX 時，執行  &lt;code&gt;SXC install shokaX&lt;/code&gt;  出現錯誤訊息&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;error /workspaces/page/node_modules/deasync: Command failed.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Exit code: &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command: &lt;span class=&#34;token function&#34;&gt;node&lt;/span&gt; ./build.js&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Arguments: &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Directory: /workspaces/page/node_modules/deasync&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Output:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;node:events:495&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      throw er&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; // Unhandled &lt;span class=&#34;token string&#34;&gt;&#39;error&#39;&lt;/span&gt; event&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      ^&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Error: spawn node-gyp ENOENT&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    at ChildProcess._handle.onexit &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;node:internal/child_process:284:19&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    at onErrorNT &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;node:internal/child_process:477:16&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    at process.processTicksAndRejections &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;node:internal/process/task_queues:82:21&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Emitted &lt;span class=&#34;token string&#34;&gt;&#39;error&#39;&lt;/span&gt; event on ChildProcess instance at:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    at ChildProcess._handle.onexit &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;node:internal/child_process:290:12&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    at onErrorNT &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;node:internal/child_process:477:16&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    at process.processTicksAndRejections &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;node:internal/process/task_queues:82:21&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  errno: -2,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  code: &lt;span class=&#34;token string&#34;&gt;&#39;ENOENT&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  syscall: &lt;span class=&#34;token string&#34;&gt;&#39;spawn node-gyp&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  path: &lt;span class=&#34;token string&#34;&gt;&#39;node-gyp&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  spawnargs: &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;rebuild&#39;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Node.js v18.18.2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;info Visit https://yarnpkg.com/en/docs/cli/add &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; documentation about this command.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;環境&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#環境&#34;&gt;#&lt;/a&gt; 環境&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker image: node:18-slim&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;修正方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修正方法&#34;&gt;#&lt;/a&gt; 修正方法&lt;/h1&gt;
+&lt;p&gt;安裝下面套件，不確定  &lt;code&gt;make&lt;/code&gt; ,  &lt;code&gt;g++&lt;/code&gt;  需不需要，因為之前遇過類似的問題都裝這三個，所以直接複製過來用。如果沒有安裝的話，在安裝  &lt;code&gt;node-gyp&lt;/code&gt;  會出現其他錯誤。&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;apt-get&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-y&lt;/span&gt; python3 &lt;span class=&#34;token function&#34;&gt;make&lt;/span&gt; g++&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;安裝  &lt;code&gt;node-gyp&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;pnpm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-g&lt;/span&gt; node-gyp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
+        <category term="Docker" scheme="https://8loser.github.io/tags/Docker/" />
+        <updated>2023-10-29T17:04:26.000Z</updated>
+    </entry>
     <entry>
         <id>https://8loser.github.io/2023/08/27/static-web-page-refresh-404/</id>
         <title>靜態網頁 refresh 出現 404</title>
@@ -101,8 +119,8 @@ This request has been blocked; the content must be served over HTTPS.
 &lt;img data-src=&#34;backup-start.png&#34; alt=&#34;Backup Start&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="Linux" scheme="https://8loser.github.io/tags/Linux/" />
-        <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
         <category term="DBeaver" scheme="https://8loser.github.io/tags/DBeaver/" />
+        <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
         <updated>2023-05-06T14:57:59.000Z</updated>
     </entry>
     <entry>
@@ -242,8 +260,8 @@ This request has been blocked; the content must be served over HTTPS.
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL21pY3Jvc29mdC92c2NvZGUvaXNzdWVzLzEzMDMyMA==&#34;&gt;https://github.com/microsoft/vscode/issues/130320&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="VSCode" scheme="https://8loser.github.io/tags/VSCode/" />
         <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
+        <category term="VSCode" scheme="https://8loser.github.io/tags/VSCode/" />
         <category term="Remote Development" scheme="https://8loser.github.io/tags/Remote-Development/" />
         <updated>2023-02-20T06:10:40.000Z</updated>
     </entry>
@@ -883,59 +901,5 @@ connected&lt;br /&gt;
 </content>
         <category term="Hexo" scheme="https://8loser.github.io/tags/Hexo/" />
         <updated>2022-05-13T21:00:43.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://8loser.github.io/2022/05/13/Remote-Containers/</id>
-        <title>使用 VSCode 在 Docker container 內進行開發</title>
-        <link rel="alternate" href="https://8loser.github.io/2022/05/13/Remote-Containers/"/>
-        <content type="html">&lt;h1 id=&#34;在-container-內開發&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在-container-內開發&#34;&gt;#&lt;/a&gt; 在 Container 內開發&lt;/h1&gt;
-&lt;p&gt;在 docker container 內進行開發，好處是本機不用安裝開發必要的程式，比如說不用在本機安裝 Python 也可以開發、執行 Python 程式。&lt;/p&gt;
-&lt;p&gt;最簡單的執行方式&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;執行、進入 container&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; run &lt;span class=&#34;token parameter variable&#34;&gt;--rm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-it&lt;/span&gt; alpine&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;就可以啟動進入 container 開發，不過這樣子的開發方式都依賴 CLI。&lt;/p&gt;
-&lt;h1 id=&#34;remote-containers&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#remote-containers&#34;&gt;#&lt;/a&gt; Remote Containers&lt;/h1&gt;
-&lt;p&gt;這邊介紹一個 VSCode 套件 Remote Containers。可以進入 container 內，使用 VSCode 進行開發。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;001.png&#34; alt=&#34;Remote Containers&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;requirements&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#requirements&#34;&gt;#&lt;/a&gt; Requirements&lt;/h1&gt;
-&lt;p&gt;繼續之前，請先檢查自己的環境是不是符合需求&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb2RlLnZpc3VhbHN0dWRpby5jb20vZG9jcy9yZW1vdGUvY29udGFpbmVycyNfc3lzdGVtLXJlcXVpcmVtZW50cw==&#34;&gt;https://code.visualstudio.com/docs/remote/containers#_system-requirements&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&#34;definition&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#definition&#34;&gt;#&lt;/a&gt; Definition&lt;/h1&gt;
-&lt;p&gt;準備完畢後，執行 VSCode 載入要開發用的資料夾，然後點選左下角綠色 &amp;quot;&amp;gt;&amp;lt;&amp;quot; 圖示&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;002.png&#34; alt=&#34;&amp;gt;&amp;lt;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;點選 &amp;quot;Add Development Container Configuration Files…&amp;quot;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;003.png&#34; alt=&#34;Add Development Container Configuration Files…&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;接著選取要建立的環境，如要開發使用資料庫的 Node.js 程式，就選 &amp;quot;Node.js &amp;amp; PostgreSQL&amp;quot;，如果你畫面上看到的沒有像圖片那麼多個，點一下 &amp;quot;Show All Definitions…&amp;quot; 可以顯示全部，或者輸入關鍵字搜尋。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;004.png&#34; alt=&#34;Dev Container List&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;選完主要開發的環境後，接著選取版本號。&lt;/p&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;如果你的電腦 CPU 是 arm64/Apple Silicon 的話（如 M1 CPU），請選 &amp;quot;bullseye&amp;quot; 的版本。&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img data-src=&#34;005.png&#34; alt=&#34;bullseye&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;是否要增加其他而外功能，如果沒有的話按 &amp;quot;確定&amp;quot; 繼續。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;006.png&#34; alt=&#34;Select addition features&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;setting&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#setting&#34;&gt;#&lt;/a&gt; Setting&lt;/h1&gt;
-&lt;p&gt;會看到資料夾內多了 &amp;quot;.devcontainer&amp;quot; 資料夾，裡面還有 devcontainer.json、Dockerfile 兩個檔案。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;007.png&#34; alt=&#34;.devcontainer&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;devcontainer.json 是設定檔，定義在 container 內時 VSCode 的設定。通常會改的有下面兩個區塊。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;settings 區塊設置 VSCode 的設定，可以參考 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb2RlLnZpc3VhbHN0dWRpby5jb20vZG9jcy9nZXRzdGFydGVkL3NldHRpbmdz&#34;&gt;https://code.visualstudio.com/docs/getstarted/settings&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;extensions 區塊設定在 container 內使用 VSCode 時，要安裝哪些 VSCode 的套件。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight json&#34;&gt;&lt;figcaption data-lang=&#34;JSON&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// Set *default* container specific settings.json values on container create.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;&#34;settings&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// Add the IDs of extensions you want installed when the container is created.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token property&#34;&gt;&#34;extensions&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token string&#34;&gt;&#34;dbaeumer.vscode-eslint&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;另一個 Dockerfile 檔案，遠端連入開發的 container 就是由該檔案 build 而成。通常不需要更動，除非有要在 build 時安裝套件或者執行指令。&lt;/p&gt;
-&lt;h1 id=&#34;run&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run&#34;&gt;#&lt;/a&gt; Run&lt;/h1&gt;
-&lt;p&gt;準備就緒後，再次點選左下角綠色「&amp;gt;&amp;lt;」符號，選 &amp;quot;Reopen in Container&amp;quot;。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;008.png&#34; alt=&#34;.Reopen in Container&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;會開始 build 啟動 container，右下角會跳出提示，點選提示可以看到執行過程。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;009.png&#34; alt=&#34;build container&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;這是完成後的畫面，可以根據左下角綠色的狀態欄知道目前是不是在 container 內，如果顯示「&amp;gt;&amp;lt;」表示在本機。原本在資料夾內的檔案在 container 內也可以看到，而且本機 /container 的檔案異動是同步的。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;010.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;按 &lt;span class=&#34;kbd&#34;&gt;Ctrl&lt;/span&gt;+&lt;span class=&#34;kbd red&#34;&gt;O&lt;/span&gt; （開啟檔案），可以選取要開啟在 container 內的檔案或是本機的檔案。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;011.png&#34; alt=&#34;Open file&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;按 &lt;span class=&#34;kbd&#34;&gt;Ctrl&lt;/span&gt;+&lt;span class=&#34;kbd&#34;&gt;Shift&lt;/span&gt;+&lt;span class=&#34;kbd red&#34;&gt;`&lt;/span&gt; 開啟新的終端機，可以在 container 內執行指令。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;012.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;接著就可以在 container 內進行開發了。&lt;/p&gt;
-</content>
-        <category term="VSCode" scheme="https://8loser.github.io/tags/VSCode/" />
-        <category term="Remote Containers" scheme="https://8loser.github.io/tags/Remote-Containers/" />
-        <updated>2022-05-13T11:00:47.000Z</updated>
     </entry>
 </feed>
