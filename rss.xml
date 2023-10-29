@@ -224,8 +224,8 @@ This request has been blocked; the content must be served over HTTPS.
             <guid isPermalink="true">https://8loser.github.io/2023/02/20/terminals-pty-host-is-unresponsive/</guid>
             <title>Dev Containers 出現 terminal&#39;s pty host process is unresponsive</title>
             <link>https://8loser.github.io/2023/02/20/terminals-pty-host-is-unresponsive/</link>
-            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
             <category term="VSCode" scheme="https://8loser.github.io/tags/VSCode/" />
+            <category term="troubleshooting" scheme="https://8loser.github.io/tags/troubleshooting/" />
             <category term="Remote Development" scheme="https://8loser.github.io/tags/Remote-Development/" />
             <pubDate>Mon, 20 Feb 2023 14:10:40 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;錯誤訊息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#錯誤訊息&#34;&gt;#&lt;/a&gt; 錯誤訊息&lt;/h1&gt;
