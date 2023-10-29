@@ -616,6 +616,7 @@ connected&lt;br /&gt;
           &lt;p class=&#34;desc&#34;&gt;I want to connect from a container to a service on the host&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
+        <category term="Need to Know" scheme="https://8loser.github.io/categories/Need-to-Know/" />
         <category term="Docker" scheme="https://8loser.github.io/tags/Docker/" />
         <updated>2022-07-23T07:47:36.000Z</updated>
     </entry>

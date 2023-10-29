@@ -167,6 +167,7 @@
             "date_published": "2022-07-23T07:47:36.000Z",
             "content_html": "<h1 id=\"docker-container-存取-host-服務\"><a class=\"anchor\" href=\"#docker-container-存取-host-服務\">#</a> Docker Container 存取 host 服務</h1>\n<p>場景應用如 container 運行程式，host 安裝資料庫。container 內的程式需要存取安裝在 host 的資料庫。</p>\n<p>只要在程式內呼叫資料庫的位址使用  <code>host.docker.internal</code>  即可，如在 host 安裝 PostgreSQL，程式內設定資料庫位置就是</p>\n<blockquote>\n<p><code>host.docker.internal:5432</code></p>\n</blockquote>\n<p>原本還有下面兩個，不過已經 deprecated 了。</p>\n<blockquote>\n<p><code>docker.for.mac.host.internal</code></p>\n</blockquote>\n<blockquote>\n<p><code>docker.for.mac.localhost</code></p>\n</blockquote>\n<h1 id=\"參考資料\"><a class=\"anchor\" href=\"#參考資料\">#</a> 參考資料</h1>\n<p><div class=\"links\"><div class=\"item\" title=\"docker docs\" style=\"--block-color:#9d5b8b;\"><span class=\"exturl image\" data-url=\"aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZGVza3RvcC9uZXR3b3JraW5nLyNpLXdhbnQtdG8tY29ubmVjdC1mcm9tLWEtY29udGFpbmVyLXRvLWEtc2VydmljZS1vbi10aGUtaG9zdA==\" data-background-image=\"/assets/404.png\"></span>\n          <div class=\"info\">\n          <span class=\"exturl title\" data-url=\"aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZGVza3RvcC9uZXR3b3JraW5nLyNpLXdhbnQtdG8tY29ubmVjdC1mcm9tLWEtY29udGFpbmVyLXRvLWEtc2VydmljZS1vbi10aGUtaG9zdA==\">docker docs</span>\n          <p class=\"desc\">I want to connect from a container to a service on the host</p>\n          </div></div></div></p>\n",
             "tags": [
+                "Need to Know",
                 "Docker"
             ]
         },

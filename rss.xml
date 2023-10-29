@@ -599,6 +599,7 @@ connected&lt;br /&gt;
             <guid isPermalink="true">https://8loser.github.io/2022/07/23/docker-access-host/</guid>
             <title>Docker Container 存取 host 服務</title>
             <link>https://8loser.github.io/2022/07/23/docker-access-host/</link>
+            <category term="Need to Know" scheme="https://8loser.github.io/categories/Need-to-Know/" />
             <category term="Docker" scheme="https://8loser.github.io/tags/Docker/" />
             <pubDate>Sat, 23 Jul 2022 15:47:36 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;docker-container-存取-host-服務&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-container-存取-host-服務&#34;&gt;#&lt;/a&gt; Docker Container 存取 host 服務&lt;/h1&gt;
