@@ -9,7 +9,7 @@
         {
             "id": "https://8loser.github.io/2024/06/17/dev-container-bind-source-error/",
             "url": "https://8loser.github.io/2024/06/17/dev-container-bind-source-error/",
-            "title": "dev-container-bind-source-error",
+            "title": "bind source path does not exist",
             "date_published": "2024-06-16T16:38:53.000Z",
             "content_html": "<h1 id=\"問題描述\"><a class=\"anchor\" href=\"#問題描述\">#</a> 問題描述</h1>\n<p>DevContainer 啟動 container 錯誤，查看錯誤訊息如下<br />\n <code>Error response from daemon: invalid mount config for type &quot;bind&quot;: bind source path does not exist: /run/user/1000/wayland-0</code></p>\n<h1 id=\"環境\"><a class=\"anchor\" href=\"#環境\">#</a> 環境</h1>\n<ul>\n<li>OS: EndeavourOS</li>\n<li>在 VSCode 使用 Dev Container 套件啟動 container</li>\n</ul>\n<h1 id=\"修正方法\"><a class=\"anchor\" href=\"#修正方法\">#</a> 修正方法</h1>\n<p>刪除下面兩個檔案</p>\n<ul>\n<li>/run/user/1000/wayland-0</li>\n<li>/run/user/1000/wayland-0.lock</li>\n</ul>\n",
             "tags": [

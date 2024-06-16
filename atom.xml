@@ -11,7 +11,7 @@
     <updated>2024-06-16T16:38:53.000Z</updated>
     <entry>
         <id>https://8loser.github.io/2024/06/17/dev-container-bind-source-error/</id>
-        <title>dev-container-bind-source-error</title>
+        <title>bind source path does not exist</title>
         <link rel="alternate" href="https://8loser.github.io/2024/06/17/dev-container-bind-source-error/"/>
         <content type="html">&lt;h1 id=&#34;問題描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#問題描述&#34;&gt;#&lt;/a&gt; 問題描述&lt;/h1&gt;
 &lt;p&gt;DevContainer 啟動 container 錯誤，查看錯誤訊息如下&lt;br /&gt;
