@@ -7,6 +7,18 @@
     "home_page_url": "https://8loser.github.io",
     "items": [
         {
+            "id": "https://8loser.github.io/2024/06/17/dev-container-bind-source-error/",
+            "url": "https://8loser.github.io/2024/06/17/dev-container-bind-source-error/",
+            "title": "dev-container-bind-source-error",
+            "date_published": "2024-06-16T16:38:53.000Z",
+            "content_html": "<h1 id=\"問題描述\"><a class=\"anchor\" href=\"#問題描述\">#</a> 問題描述</h1>\n<p>DevContainer 啟動 container 錯誤，查看錯誤訊息如下<br />\n <code>Error response from daemon: invalid mount config for type &quot;bind&quot;: bind source path does not exist: /run/user/1000/wayland-0</code></p>\n<h1 id=\"環境\"><a class=\"anchor\" href=\"#環境\">#</a> 環境</h1>\n<ul>\n<li>OS: EndeavourOS</li>\n<li>在 VSCode 使用 Dev Container 套件啟動 container</li>\n</ul>\n<h1 id=\"修正方法\"><a class=\"anchor\" href=\"#修正方法\">#</a> 修正方法</h1>\n<p>刪除下面兩個檔案</p>\n<ul>\n<li>/run/user/1000/wayland-0</li>\n<li>/run/user/1000/wayland-0.lock</li>\n</ul>\n",
+            "tags": [
+                "Trouble",
+                "VSCode",
+                "Remote Container"
+            ]
+        },
+        {
             "id": "https://8loser.github.io/2024/06/16/shokaX-waline-comment/",
             "url": "https://8loser.github.io/2024/06/16/shokaX-waline-comment/",
             "title": "Hexo ShokaX 主題使用 Waline 留言版",
@@ -227,18 +239,6 @@
             "tags": [
                 "Need to Know",
                 "Hexo"
-            ]
-        },
-        {
-            "id": "https://8loser.github.io/2022/05/14/hexo-theme/",
-            "url": "https://8loser.github.io/2022/05/14/hexo-theme/",
-            "title": "使用 Hexo theme",
-            "date_published": "2022-05-13T22:22:17.000Z",
-            "content_html": "<h1 id=\"hexo-theme\"><a class=\"anchor\" href=\"#hexo-theme\">#</a> Hexo theme</h1>\n<p>Hexo 有非常多的主題可以套用，可以從 <a href=\"https://hexo.io/themes/\">https://hexo.io/themes/</a> 挑選喜歡的主題。</p>\n<h1 id=\"shoka\"><a class=\"anchor\" href=\"#shoka\">#</a> Shoka</h1>\n<p>我使用的 theme 叫 Shoka (書架)，下面介紹怎麼安裝 Shoka 主題</p>\n<p>作者網站 <a href=\"https://shoka.lostyu.me/\">https://shoka.lostyu.me/</a></p>\n<p>GitHub <a href=\"https://github.com/amehime/hexo-theme-shoka\">https://github.com/amehime/hexo-theme-shoka</a></p>\n<p>使用教學 <a href=\"https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/\">https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/</a></p>\n<h1 id=\"安裝-shoka\"><a class=\"anchor\" href=\"#安裝-shoka\">#</a> 安裝 shoka</h1>\n<p>切換到專案目錄，執行下面指令，使用 git 複製 shoka 原始碼到專案目錄下的 themes/shoka 資料夾</p>\n<figure class=\"highlight git\"><figcaption data-lang=\"git\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>git clone https://github.com/amehime/hexo-theme-shoka.git ./themes/shoka</pre></td></tr></table></figure><h1 id=\"安裝-shoka-相依套件\"><a class=\"anchor\" href=\"#安裝-shoka-相依套件\">#</a> 安裝 shoka 相依套件</h1>\n<p>根據 <a href=\"https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/dependents/\">Theme Shoka Dependents</a> 說明，安裝相依套件前要先移除  <code>hexo-renderer-marked</code></p>\n<div class=\"note info\">\n<p>執行下列指令前，確認已切換到專案目錄內</p>\n</div>\n<p>移除  <code>hexo-renderer-marked</code></p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">yarn</span> remove hexo-renderer-marked</pre></td></tr></table></figure><p>安裝其他相依套件</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">yarn</span> <span class=\"token function\">add</span> <span class=\"token punctuation\">\\</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre>    hexo-renderer-multi-markdown-it <span class=\"token punctuation\">\\</span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre>    hexo-autoprefixer <span class=\"token punctuation\">\\</span></pre></td></tr><tr><td data-num=\"4\"></td><td><pre>    hexo-algoliasearch <span class=\"token punctuation\">\\</span></pre></td></tr><tr><td data-num=\"5\"></td><td><pre>    hexo-symbols-count-time <span class=\"token punctuation\">\\</span></pre></td></tr><tr><td data-num=\"6\"></td><td><pre>    hexo-feed</pre></td></tr></table></figure><h1 id=\"套用主題\"><a class=\"anchor\" href=\"#套用主題\">#</a> 套用主題</h1>\n<p>修改專案資料夾內  <code>_config.yml</code>  檔案，把 theme 改為 shoka</p>\n<figure class=\"highlight json\"><figcaption data-lang=\"JSON\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>theme<span class=\"token operator\">:</span> shoka</pre></td></tr></table></figure><p>之後執行  <code>hexo server</code></p>\n<p>開啟 <a href=\"http://localhost:4000\">http://localhost:4000</a> 就可以看到套用的效果</p>\n<h1 id=\"其他\"><a class=\"anchor\" href=\"#其他\">#</a> 其他</h1>\n<p>其他關於 Shoka 的說明可參考下面網址<br />\n<a href=\"https://shoka.lostyu.me/categories/computer-science/note/theme-shoka-doc/\"> https://shoka.lostyu.me/categories/computer-science/note/theme-shoka-doc/</a></p>\n",
-            "tags": [
-                "Hexo",
-                "theme",
-                "Shoka"
             ]
         }
     ]

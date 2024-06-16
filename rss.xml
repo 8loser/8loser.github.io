@@ -10,8 +10,32 @@
         </author>
         <description>我在八樓閒晃</description>
         <language>zh-TW</language>
-        <pubDate>Sun, 16 Jun 2024 01:17:17 +0800</pubDate>
-        <lastBuildDate>Sun, 16 Jun 2024 01:17:17 +0800</lastBuildDate>
+        <pubDate>Mon, 17 Jun 2024 00:38:53 +0800</pubDate>
+        <lastBuildDate>Mon, 17 Jun 2024 00:38:53 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://8loser.github.io/2024/06/17/dev-container-bind-source-error/</guid>
+            <title>dev-container-bind-source-error</title>
+            <link>https://8loser.github.io/2024/06/17/dev-container-bind-source-error/</link>
+            <category term="Trouble" scheme="https://8loser.github.io/categories/Trouble/" />
+            <category term="VSCode" scheme="https://8loser.github.io/tags/VSCode/" />
+            <category term="Remote Container" scheme="https://8loser.github.io/tags/Remote-Container/" />
+            <pubDate>Mon, 17 Jun 2024 00:38:53 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;問題描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#問題描述&#34;&gt;#&lt;/a&gt; 問題描述&lt;/h1&gt;
+&lt;p&gt;DevContainer 啟動 container 錯誤，查看錯誤訊息如下&lt;br /&gt;
+ &lt;code&gt;Error response from daemon: invalid mount config for type &amp;quot;bind&amp;quot;: bind source path does not exist: /run/user/1000/wayland-0&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&#34;環境&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#環境&#34;&gt;#&lt;/a&gt; 環境&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;OS: EndeavourOS&lt;/li&gt;
+&lt;li&gt;在 VSCode 使用 Dev Container 套件啟動 container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;修正方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修正方法&#34;&gt;#&lt;/a&gt; 修正方法&lt;/h1&gt;
+&lt;p&gt;刪除下面兩個檔案&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/run/user/1000/wayland-0&lt;/li&gt;
+&lt;li&gt;/run/user/1000/wayland-0.lock&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://8loser.github.io/2024/06/16/shokaX-waline-comment/</guid>
             <title>Hexo ShokaX 主題使用 Waline 留言版</title>
@@ -927,39 +951,6 @@ connected&lt;br /&gt;
 &lt;p&gt;作者網站 &lt;a href=&#34;https://shoka.lostyu.me/&#34;&gt;https://shoka.lostyu.me/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;GitHub &lt;a href=&#34;https://github.com/amehime/hexo-theme-shoka&#34;&gt;https://github.com/amehime/hexo-theme-shoka&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;使用教學 &lt;a href=&#34;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/&#34;&gt;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/&lt;/a&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://8loser.github.io/2022/05/14/hexo-theme/</guid>
-            <title>使用 Hexo theme</title>
-            <link>https://8loser.github.io/2022/05/14/hexo-theme/</link>
-            <category term="Hexo" scheme="https://8loser.github.io/tags/Hexo/" />
-            <category term="theme" scheme="https://8loser.github.io/tags/theme/" />
-            <category term="Shoka" scheme="https://8loser.github.io/tags/Shoka/" />
-            <pubDate>Sat, 14 May 2022 06:22:17 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;hexo-theme&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo-theme&#34;&gt;#&lt;/a&gt; Hexo theme&lt;/h1&gt;
-&lt;p&gt;Hexo 有非常多的主題可以套用，可以從 &lt;a href=&#34;https://hexo.io/themes/&#34;&gt;https://hexo.io/themes/&lt;/a&gt; 挑選喜歡的主題。&lt;/p&gt;
-&lt;h1 id=&#34;shoka&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#shoka&#34;&gt;#&lt;/a&gt; Shoka&lt;/h1&gt;
-&lt;p&gt;我使用的 theme 叫 Shoka (書架)，下面介紹怎麼安裝 Shoka 主題&lt;/p&gt;
-&lt;p&gt;作者網站 &lt;a href=&#34;https://shoka.lostyu.me/&#34;&gt;https://shoka.lostyu.me/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;GitHub &lt;a href=&#34;https://github.com/amehime/hexo-theme-shoka&#34;&gt;https://github.com/amehime/hexo-theme-shoka&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;使用教學 &lt;a href=&#34;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/&#34;&gt;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;安裝-shoka&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安裝-shoka&#34;&gt;#&lt;/a&gt; 安裝 shoka&lt;/h1&gt;
-&lt;p&gt;切換到專案目錄，執行下面指令，使用 git 複製 shoka 原始碼到專案目錄下的 themes/shoka 資料夾&lt;/p&gt;
-&lt;figure class=&#34;highlight git&#34;&gt;&lt;figcaption data-lang=&#34;git&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git clone https://github.com/amehime/hexo-theme-shoka.git ./themes/shoka&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;安裝-shoka-相依套件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安裝-shoka-相依套件&#34;&gt;#&lt;/a&gt; 安裝 shoka 相依套件&lt;/h1&gt;
-&lt;p&gt;根據 &lt;a href=&#34;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/dependents/&#34;&gt;Theme Shoka Dependents&lt;/a&gt; 說明，安裝相依套件前要先移除  &lt;code&gt;hexo-renderer-marked&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;執行下列指令前，確認已切換到專案目錄內&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;移除  &lt;code&gt;hexo-renderer-marked&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;yarn&lt;/span&gt; remove hexo-renderer-marked&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;安裝其他相依套件&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;yarn&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    hexo-renderer-multi-markdown-it &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    hexo-autoprefixer &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    hexo-algoliasearch &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    hexo-symbols-count-time &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    hexo-feed&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;套用主題&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#套用主題&#34;&gt;#&lt;/a&gt; 套用主題&lt;/h1&gt;
-&lt;p&gt;修改專案資料夾內  &lt;code&gt;_config.yml&lt;/code&gt;  檔案，把 theme 改為 shoka&lt;/p&gt;
-&lt;figure class=&#34;highlight json&#34;&gt;&lt;figcaption data-lang=&#34;JSON&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;theme&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; shoka&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;之後執行  &lt;code&gt;hexo server&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;開啟 &lt;a href=&#34;http://localhost:4000&#34;&gt;http://localhost:4000&lt;/a&gt; 就可以看到套用的效果&lt;/p&gt;
-&lt;h1 id=&#34;其他&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他&#34;&gt;#&lt;/a&gt; 其他&lt;/h1&gt;
-&lt;p&gt;其他關於 Shoka 的說明可參考下面網址&lt;br /&gt;
-&lt;a href=&#34;https://shoka.lostyu.me/categories/computer-science/note/theme-shoka-doc/&#34;&gt; https://shoka.lostyu.me/categories/computer-science/note/theme-shoka-doc/&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
