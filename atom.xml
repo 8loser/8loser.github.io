@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://8loser.github.io</id>
     <title>別在圍城時走散</title>
-    <subtitle>hi, 你也來攻城嗎</subtitle>
+    <subtitle></subtitle>
     <icon>https://8loser.github.io/assets/favicon.ico</icon>
     <link href="https://8loser.github.io" />
     <author>
@@ -406,7 +406,7 @@ This request has been blocked; the content must be served over HTTPS.
         &lt;div class=&#34;info&#34;&gt;
         &lt;a href=&#34;https://code.visualstudio.com/docs/devcontainers/containers&#34; class=&#34;title&#34;&gt;Developing inside a Container&lt;/a&gt;
         &lt;p class=&#34;desc&#34;&gt;https://code.visualstudio.com/docs/devcontainers/containers&lt;/p&gt;
-        &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;八樓的人&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;a href=&#34;/2022/05/13/Remote-Containers/&#34; class=&#34;image&#34; data-background-image=&#34;/images/avatar.jpg&#34;&gt;&lt;/a&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;八樓的人&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;a href=&#34;/2022/05/13/Remote-Containers/&#34; class=&#34;image&#34; data-background-image=&#34;/assets/avatar.jpg&#34;&gt;&lt;/a&gt;
         &lt;div class=&#34;info&#34;&gt;
         &lt;a href=&#34;/2022/05/13/Remote-Containers/&#34; class=&#34;title&#34;&gt;使用 VSCode 在 Docker container 內進行開發&lt;/a&gt;
         &lt;p class=&#34;desc&#34;&gt;/2022/05/13/Remote-Containers/&lt;/p&gt;
