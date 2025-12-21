@@ -145,13 +145,14 @@
 這邊會詢問剛剛產生  &lt;code&gt;client.key&lt;/code&gt;  時的金鑰密碼，驗證後會再詢問金鑰匯出密碼，在匯入時會需要 (可不設置)。&lt;/p&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;openssl pkcs12 &lt;span class=&#34;token parameter variable&#34;&gt;-export&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-inkey&lt;/span&gt; client.key &lt;span class=&#34;token parameter variable&#34;&gt;-in&lt;/span&gt; client.cert &lt;span class=&#34;token parameter variable&#34;&gt;-out&lt;/span&gt; client.p12 &lt;span class=&#34;token parameter variable&#34;&gt;-name&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;client-cert&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;憑證匯入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#憑證匯入&#34;&gt;#&lt;/a&gt; 憑證匯入&lt;/h2&gt;
 &lt;p&gt;在 Windows、Linux 桌面環境大致上都直接點兩下  &lt;code&gt;client.p12&lt;/code&gt;  後輸入匯出密碼即可。之後可開啟瀏覽器查看網站是否可正常瀏覽。&lt;/p&gt;
-&lt;p&gt;macOS 可能會出現一直詢問密碼 (匯出密碼錯誤) 的情況，強者我同事說是因為  &lt;code&gt;openssh&lt;/code&gt;  版本差異關係，使用舊版的  &lt;code&gt;openssh&lt;/code&gt;  重新匯出 p12 憑證即可。&lt;/p&gt;
+&lt;p&gt;macOS 可能會出現一直詢問密碼 (匯出密碼錯誤) 的情況，強者我同事說是因為  &lt;code&gt;openssl&lt;/code&gt;  版本差異關係，使用舊版的  &lt;code&gt;openssl&lt;/code&gt;  重新匯出 p12 憑證即可。&lt;/p&gt;
 &lt;p&gt;macOS 還需要從  &lt;code&gt;鑰匙圈&lt;/code&gt;  設定憑證的存取權限為一律允許，否則在瀏覽網站的時候，會一直出現詢問密碼請求允許的情況。&lt;/p&gt;
 </content>
         <category term="Step By Step" scheme="https://8loser.github.io/categories/Step-By-Step/" />
         <category term="GCP" scheme="https://8loser.github.io/tags/GCP/" />
         <category term="mutual TLS" scheme="https://8loser.github.io/tags/mutual-TLS/" />
         <category term="憑證" scheme="https://8loser.github.io/tags/%E6%86%91%E8%AD%89/" />
+        <category term="SSL" scheme="https://8loser.github.io/tags/SSL/" />
         <updated>2024-11-08T15:38:07.000Z</updated>
     </entry>
     <entry>
