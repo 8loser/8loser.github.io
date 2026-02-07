@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://8loser.github.io/2023/03/12/reduce-frontend-docker-image/</loc>
+    
+    <lastmod>2026-02-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://8loser.github.io/2026/02/07/rag-tutorial/</loc>
     
     <lastmod>2026-02-07</lastmod>
@@ -84,15 +93,6 @@
   
   <url>
     <loc>https://8loser.github.io/2024/06/16/shokaX-waline-comment/</loc>
-    
-    <lastmod>2025-10-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://8loser.github.io/2023/03/12/reduce-frontend-docker-image/</loc>
     
     <lastmod>2025-10-31</lastmod>
     
@@ -272,13 +272,6 @@
 
   
   <url>
-    <loc>https://8loser.github.io/tags/scaffolding/</loc>
-    <lastmod>2026-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://8loser.github.io/tags/EndeavourOS/</loc>
     <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -294,6 +287,13 @@
   
   <url>
     <loc>https://8loser.github.io/tags/Shell-script/</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://8loser.github.io/tags/scaffolding/</loc>
     <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -440,14 +440,14 @@
   </url>
   
   <url>
-    <loc>https://8loser.github.io/tags/Story/</loc>
+    <loc>https://8loser.github.io/tags/WebSocket/</loc>
     <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://8loser.github.io/tags/WebSocket/</loc>
+    <loc>https://8loser.github.io/tags/Story/</loc>
     <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

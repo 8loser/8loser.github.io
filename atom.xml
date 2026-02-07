@@ -66,7 +66,9 @@
 &lt;li&gt;可以建立不同維度的 collection&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;Qdrant 有 web 界面 &lt;img loading=&#34;lazy&#34; src=&#34;qdrant.png&#34; alt=&#34;Qdrant&#34; /&gt;&lt;/p&gt;
+&lt;details class=&#34;success&#34;&gt;&lt;summary&gt;Qdrant 有 web 界面&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;qdrant.png&#34; alt=&#34;Qdrant&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
 &lt;h1 id=&#34;rag&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rag&#34;&gt;#&lt;/a&gt; RAG&lt;/h1&gt;
 &lt;p&gt;要進行 RAG 還差 LLM (Large Language Model), LLM 屬於 RAG 的 G (Generate), 這邊使用 Ollama 載入 llama3&lt;/p&gt;
 &lt;details class=&#34;info&#34;&gt;&lt;summary&gt;安裝依賴套件&lt;/summary&gt;&lt;div&gt;
@@ -497,7 +499,7 @@ This request has been blocked; the content must be served over HTTPS.
         <title>縮減靜態網頁 Docker image 大小</title>
         <link rel="alternate" href="https://8loser.github.io/2023/03/12/reduce-frontend-docker-image/"/>
         <content type="html">&lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
-&lt;p&gt;通常 Vue 部屬都是先打包成靜態網頁再部屬到 web 服務器上，但如此無法做到程式碼上傳版控後自動部屬，因為上傳的是原始碼，不是打包後的靜態網頁。&lt;/p&gt;
+&lt;p&gt;通常 Vue 部屬都是先打包成靜態網頁再部屬到 web 服務器上，但如此無法做到程式碼上傳版控後自動部署，因為上傳的是原始碼，不是打包後的靜態網頁。&lt;/p&gt;
 &lt;p&gt;所以 Vue 搭配 Docker 時，有種作法是把原始碼直接直接 build 成執行  &lt;code&gt;npm run dev&lt;/code&gt;  的 docker image 後放在 server 執行。&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;jsut-do-it.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;note danger&#34;&gt;
